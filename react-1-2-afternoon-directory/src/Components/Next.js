@@ -10,7 +10,7 @@ class Next extends Component{
     render(){
         return(
             <div>
-
+                <button>Next</button>
             </div>
         )
     }

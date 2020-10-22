@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Main from './Components/Main'
-import data from './src/data'
+import data from './data'
+import Next from './Components/Next'
+import Previous from './Components/Previous'
 
-
-function App() {
-  return (
-    <div className="App">
-      <Main/>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      data : data,
+      dataId: data[{id}]
+    }
+    console.log(dataId)
+  }
+  render(){
+    return (
+      <div className="App">
+        <Next/>
+        <Main/>
+        <Previous/>
+      </div>
+    );
+  }
 }
 
 export default App;
