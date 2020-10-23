@@ -1,17 +1,11 @@
 import React, {Component} from 'react'
 
 class Next extends Component{
-    constructor(){
-        super()
-        this.state = {
-            
-        }
-    }
     render(){
         return(
-            <div>
-                <button>Next</button>
-            </div>
+            <div className="Next">
+                <button onClick={this.props.increaseValue}>Next</button>
+           </div>
         )
     }
 }

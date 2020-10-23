@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-class Main extends Component{
+
+class Counter extends Component{
     constructor(){
         super()
         this.state = {
@@ -8,11 +9,10 @@ class Main extends Component{
     }
     render(){
         return(
-            <div>
-
+            <div className="Counter">
             </div>
         )
     }
 }
 
-export default Main
+export default Counter
